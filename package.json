@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://b-vlada.github.io/school-website",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "vue": "^3.4.0",
@@ -18,9 +20,7 @@
     "@vitejs/plugin-vue": "^5.0.0",
     "typescript": "^5.2.0",
     "vite-svg-loader": "^5.1.1",
-    "vue-tsc": "^1.8.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+    "vue-tsc": "^1.8.0",
+    "gh-pages": "^6.0.0"
   }
 }

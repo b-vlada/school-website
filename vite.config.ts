@@ -4,6 +4,7 @@ import svgLoader from 'vite-svg-loader'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
+  base: '/school-website/',
   plugins: [
     vue(),
     svgLoader()
